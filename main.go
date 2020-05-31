@@ -24,6 +24,9 @@ func write(msg chan *Message, str string) {
 }
 
 func main() {
+
+	fmt.Println(GetMembers())
+
 	msg := make(chan *Message)
 
 	hub := newHub()
